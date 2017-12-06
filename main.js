@@ -1,7 +1,13 @@
 $(document).ready(function(){
 	var colors = ["green", "yellow"];
-	$("#circle").click(function(){
-		var rand = Math.floor(Math.random() * colors.length);
-		$(this).css("background-color", colors[rand]);		
-	});
+	var i = 0;
+	var selectedColor;
+    $("#circle").click(function() {
+        selectedColor = colors[i];
+        document.getElementById("circle").style.backgroundColor = selectedColor;
+        i++;
+        if(i >= colors.length)
+            i = 0;
+    });
 });
+
