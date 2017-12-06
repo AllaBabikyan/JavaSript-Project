@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	var colors = ["green", "yellow"];
+	$(document).ready(function(){
+	var colors = ["yellow", "green"];
 	var i = 0;
 	var selectedColor;
     $("#circle").click(function() {
@@ -9,5 +10,6 @@ $(document).ready(function(){
         if(i >= colors.length)
             i = 0;
     });
+});
 });
 
