@@ -1,8 +1,11 @@
-#circle {
+div {
 	width: 100px;
 	height: 100px;
 	background-color: green;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
-	border-radius: 50%;
+	border-radius: 50%;	
+}
+.back-red{
+	background-color: red;
 }
